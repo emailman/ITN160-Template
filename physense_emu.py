@@ -1,4 +1,3 @@
-import subprocess
 from playsound import playsound
 
 
@@ -12,8 +11,6 @@ def clear_button():
 class Sensor:
 
     def __init__(self):
-        # Start the simulator
-        subprocess.Popen('python.exe physense_emuX.py')
 
         # Initialize the data files
         file = open('data/led_status.txt', 'w')
